@@ -15,7 +15,7 @@ const Contact = () => {
     setStatus({ loading: true, success: '', error: '' });
 
     try {
-      const res = await fetch('http://localhost:9000/api/contact', {
+      const res = await fetch('https://portfolio-backend-kappa-khaki.vercel.app/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
